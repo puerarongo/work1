@@ -24,12 +24,12 @@
 }
 
 .button {
-  padding: 4px 20px;
+  padding: 8px 20px;
   color: #000000;
   background-color: #f4e041;
   cursor: pointer;
   border: none;
-  border-radius: 8px;
+  border-radius: 80px;
 }
 
 .button:hover {

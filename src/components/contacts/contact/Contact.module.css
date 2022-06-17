@@ -1,16 +1,19 @@
 .contact__container {
+  padding: 20px;
 }
 
 .avatar__container {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
 }
 
 .contact__avatar {
-}
-
-.contact__information {
+  border-radius: 50%;
 }
 
 .contact__name {
+  margin-bottom: 20px;
 }
 
 .contact__email {

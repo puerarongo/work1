@@ -4,6 +4,52 @@
 }
 
 .button {
+  padding: 4px 20px;
+  color: #000000;
+  background-color: #f4e041;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+
+  margin-bottom: 100px;
+}
+
+.button:hover {
+  background-color: #f4f804;
+}
+
+.login__title {
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 40px;
+  line-height: 1;
+}
+
+.form {
+  padding: 0;
+}
+
+.login__label {
+  display: block;
+}
+
+.login__label:not(:last-child) {
+  margin-bottom: 50px;
+}
+
+.login__input {
+  padding: 14px 16px;
+  max-width: 328px;
+}
+
+.login__phone {
+  text-align: left;
+  padding-left: 16px;
+  margin-bottom: 25px;
+  color: #7e7e7e;
+}
+
+.button {
   padding: 8px 20px;
   color: #000000;
   background-color: #f4e041;
@@ -16,17 +62,6 @@
   background-color: #f4f804;
 }
 
-.contacts__title {
-  margin-bottom: 50px;
-  text-align: center;
-  font-size: 40px;
-  line-height: 1;
-}
-
-.contacts__container {
-  margin-bottom: 50px;
-}
-
 /* * MEDIA */
 
 @media screen and (min-width: 768px) {
@@ -34,12 +69,24 @@
     padding: 140px 32px 0;
     text-align: center;
   }
+
+  .form {
+    padding: 0 162px;
+  }
+
+  .login__input {
+    min-width: 380px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .section {
     padding: 140px 60px 0;
     text-align: center;
+  }
+
+  .form {
+    padding: 0 262px;
   }
 }
 
