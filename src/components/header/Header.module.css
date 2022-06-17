@@ -1,5 +1,4 @@
 .header {
-  position: absolute;
   background-color: #ffffff;
   border-bottom: 1px solid #80808062;
 }
@@ -9,7 +8,7 @@
   align-items: center;
   justify-content: center;
   margin: auto auto;
-  padding: 16px 13px;
+  padding: 13px 16px;
 }
 
 .container__logo {
@@ -22,14 +21,21 @@
 }
 
 .logo__icon {
+  height: 26px;
   width: 26px;
 }
 
+.logo__text {
+  height: 11px;
+  width: 64px;
+}
+
 .button {
-  padding: 20px 4px;
+  padding: 4px 20px;
   color: #000000;
   background-color: #f4e041;
   cursor: pointer;
+  border: none;
   border-radius: 8px;
 }
 
@@ -43,18 +49,18 @@
 
 @media screen and (min-width: 768px) {
   .header__container {
-    padding: 32px 13px;
+    padding: 13px 32px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .header__container {
-    padding: 60px 13px;
+    padding: 13px 60px;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 2560px) {
   .header__container {
-    padding: 0 13px;
+    padding: 13px 0;
   }
 }

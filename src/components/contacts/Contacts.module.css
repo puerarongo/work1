@@ -1,11 +1,26 @@
 .section {
+  padding: 140px 16px;
 }
 
 .button {
+  padding: 4px 20px;
+  color: #000000;
+  background-color: #f4e041;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #f4f804;
 }
 
 .contacts__title {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1;
 }
 
 .contacts__container {
+  margin-bottom: 50px;
 }

@@ -10,7 +10,7 @@
 }
 
 .hero__container {
-  padding: 16px;
+  padding: 0 16px;
 }
 
 .hero__title {
@@ -24,10 +24,11 @@
 }
 
 .button {
-  padding: 20px 4px;
+  padding: 4px 20px;
   color: #000000;
   background-color: #f4e041;
   cursor: pointer;
+  border: none;
   border-radius: 8px;
 }
 
@@ -40,7 +41,7 @@
     padding: 90px 0;
   }
   .hero__container {
-    padding: 194px;
+    padding: 0 194px;
   }
 }
 
@@ -49,12 +50,12 @@
     padding: 164px 0;
   }
   .hero__container {
-    padding: 322px;
+    padding: 0 322px;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 2560px) {
   .hero__container {
-    padding: 395px;
+    padding: 0 395px;
   }
 }

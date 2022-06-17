@@ -15,7 +15,9 @@ const Hero = () => {
           mind. They should also be excited to learn, as the world of Front-End
           Development keeps evolving.
         </p>
-        <button className={styles.button}>Sign up</button>
+        <button className={styles.button} type="button">
+          Sign up
+        </button>
       </div>
     </section>
   );
