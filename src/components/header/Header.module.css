@@ -1,0 +1,60 @@
+.header {
+  position: absolute;
+  background-color: #ffffff;
+  border-bottom: 1px solid #80808062;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto auto;
+  padding: 16px 13px;
+}
+
+.container__logo {
+}
+
+.container__button {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.logo__icon {
+  width: 26px;
+}
+
+.button {
+  padding: 20px 4px;
+  color: #000000;
+  background-color: #f4e041;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button:hover {
+  background-color: #f4f804;
+}
+
+.button:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding: 32px 13px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header__container {
+    padding: 60px 13px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    padding: 0 13px;
+  }
+}
