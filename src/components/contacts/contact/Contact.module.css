@@ -1,11 +1,18 @@
 .contact__container {
   padding: 20px;
+  text-align: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  flex-basis: 100%;
+  min-width: 288px;
 }
 
 .avatar__container {
+  display: contents;
   width: 70px;
   height: 70px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .contact__avatar {
@@ -20,4 +27,40 @@
 }
 
 .contact__phone {
+}
+
+/* MEDIA */
+
+@media screen and (min-width: 768px) {
+  .contact__container {
+    flex-basis: calc((100% - 16px) / 2);
+    max-width: 304px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__container {
+    flex-basis: calc((100% - 58px) / 3);
+    max-width: 242px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .contact__container {
+    max-width: 330px;
+  }
+}
+
+/* MARGIN */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .contact__container:not(:nth-child(2n + 2)) {
+    margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact__container:not(:nth-child(3n + 3)) {
+    margin-right: 29px;
+  }
 }

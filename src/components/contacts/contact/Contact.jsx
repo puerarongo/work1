@@ -1,16 +1,17 @@
 import React from 'react';
 import styles from './Contact.module.css';
 
-const Contact = () => {
+const Contact = ({ photo, name, position, email, phone }) => {
   return (
-    <div className={styles.contact__container}>
+    <li className={styles.contact__container}>
       <div className={styles.avatar__container}>
-        <img className={styles.contact__avatar} src="" alt="" />
+        <img className={styles.contact__avatar} src={photo} alt={name} />
       </div>
-      <h3 className={styles.contact__name}>Name</h3>
-      <p></p>
-      <p></p>
-    </div>
+      <h3 className={styles.contact__name}>`${name}`</h3>
+      <p>{position}</p>
+      <p>{email}</p>
+      <p>{phone}</p>
+    </li>
   );
 };
 

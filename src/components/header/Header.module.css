@@ -40,7 +40,7 @@
 }
 
 .button:hover {
-  background-color: #f4f804;
+  background-color: #ffe302;
 }
 
 .button:not(:last-child) {

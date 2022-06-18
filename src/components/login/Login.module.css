@@ -1,6 +1,5 @@
 .section {
   padding: 140px 16px 0;
-  text-align: center;
 }
 
 .button {
@@ -15,7 +14,7 @@
 }
 
 .button:hover {
-  background-color: #f4f804;
+  background-color: #ffe302;
 }
 
 .login__title {
@@ -49,6 +48,10 @@
   color: #7e7e7e;
 }
 
+.login__radio {
+  text-align: left;
+}
+
 .button {
   padding: 8px 20px;
   color: #000000;
@@ -67,11 +70,10 @@
 @media screen and (min-width: 768px) {
   .section {
     padding: 140px 32px 0;
-    text-align: center;
   }
 
   .form {
-    padding: 0 162px;
+    padding: 0 194px;
   }
 
   .login__input {
@@ -82,17 +84,15 @@
 @media screen and (min-width: 1024px) {
   .section {
     padding: 140px 60px 0;
-    text-align: center;
   }
 
   .form {
-    padding: 0 262px;
+    padding: 0 322px;
   }
 }
 
 @media screen and (min-width: 2560px) {
   .section {
     padding: 140px 0 0;
-    text-align: center;
   }
 }
