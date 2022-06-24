@@ -7,8 +7,7 @@ import styles from './Contacts.module.css';
 const Contacts = () => {
   const [page, setPage] = useState(1);
   const dispatch = useDispatch();
-  const u = useSelector(state => state);
-  const userCards = useSelector(state => state.data.user.users);
+  const userCards = useSelector(state => state.data.user);
 
   useEffect(() => {
     dispatch(getUsers(page));
@@ -22,7 +21,6 @@ const Contacts = () => {
     <section className={styles.section}>
       <h2 className={styles.contacts__title}>Working with GET request</h2>
       <ul className={styles.contacts__container}>
-        {console.log('state', u)}
         {userCards &&
           userCards.map(elem => (
             <Contact

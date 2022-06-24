@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { postUsers, getPosition } from 'redux/operations/operation';
+import { getToken, postUsers, getPosition } from 'redux/operations/operation';
 import RadioButton from './radioButton/RadioButton';
 import styles from './Login.module.css';
 
@@ -36,9 +36,12 @@ const Login = () => {
 
   const submitHandler = e => {
     e.preventDefault();
-    const user = { name, email, phone, position };
 
-    dispatch(postUsers(user));
+    dispatch(getToken()).then(request => {
+      const token = request.payload.token;
+      dispatch(postUsers({ token, name, email, phone, position }));
+    });
+
     setName('');
     setEmail('');
     setPhone('');
